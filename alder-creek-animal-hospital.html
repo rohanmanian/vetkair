@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alder Creek Animal Hospital — Veterinary Care in Millbrook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#122420;
+    --pine:#0F3D3E;
+    --pine-dark:#0A2A2B;
+    --mint:#EDF2EE;
+    --mint-deep:#DCE6DF;
+    --paper:#F7F8F5;
+    --marigold:#E3A23D;
+    --marigold-dark:#C7861F;
+    --line:#CBD6CD;
+    --white:#FFFFFF;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans',sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0;
+    color:var(--pine-dark);
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:.72rem;
+    color:var(--pine);
+    font-weight:500;
+  }
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,248,245,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    height:76px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--pine-dark);}
+  .brand .mark{
+    width:34px;height:34px;border-radius:9px;background:var(--pine);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--mint);font-size:1rem;flex:none;
+  }
+  .navlinks{display:flex;gap:32px;align-items:center;}
+  .navlinks a{font-size:.92rem;font-weight:500;text-decoration:none;color:var(--ink);opacity:.8;transition:opacity .15s;}
+  .navlinks a:hover{opacity:1;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--pine);color:var(--white);
+    padding:11px 20px;border-radius:999px;
+    font-weight:600;font-size:.9rem;text-decoration:none;
+    border:none;cursor:pointer;transition:background .15s, transform .15s;
+  }
+  .btn:hover{background:var(--pine-dark);transform:translateY(-1px);}
+  .btn.gold{background:var(--marigold);color:var(--pine-dark);}
+  .btn.gold:hover{background:var(--marigold-dark);color:var(--white);}
+  .btn.ghost{background:transparent;color:var(--pine-dark);border:1.5px solid var(--line);}
+  .btn.ghost:hover{border-color:var(--pine);background:var(--mint);}
+
+  /* HERO */
+  .hero{
+    padding:84px 0 60px;
+    display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;
+  }
+  .hero h1{font-size:3.1rem;line-height:1.06;letter-spacing:-.01em;}
+  .hero h1 em{font-style:italic;color:var(--marigold-dark);}
+  .hero p.lead{font-size:1.08rem;max-width:46ch;color:#3A4A44;margin:20px 0 30px;}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+  .hero-phone{font-family:'IBM Plex Mono',monospace;font-size:.88rem;color:var(--pine);}
+
+  .ticker-card{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 24px;box-shadow:0 18px 40px -22px rgba(15,61,62,.35);
+  }
+  .ticker-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+  .ticker-head .dot{width:8px;height:8px;border-radius:50%;background:#3FAE60;display:inline-block;margin-right:7px;box-shadow:0 0 0 3px rgba(63,174,96,.18);}
+  .ticker-row{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:10px 0;border-top:1px dashed var(--line);
+    font-size:.9rem;
+  }
+  .ticker-row:first-of-type{border-top:none;}
+  .ticker-row .slot{font-family:'IBM Plex Mono',monospace;color:var(--pine);}
+  .ticker-row .tag{
+    font-size:.7rem;font-family:'IBM Plex Mono',monospace;
+    padding:3px 8px;border-radius:6px;background:var(--mint);color:var(--pine);
+  }
+  .ticker-row .tag.book{background:#FBEAD2;color:var(--marigold-dark);}
+  .hero-illustration{margin-top:20px;text-align:center;font-size:5.4rem;line-height:1;}
+
+  /* SECTION HEADS */
+  section{padding:64px 0;}
+  .sechead{max-width:640px;margin-bottom:40px;}
+  .sechead h2{font-size:2.1rem;margin-top:8px;}
+  .sechead p{color:#4B5B54;margin-top:12px;font-size:1rem;}
+
+  /* SERVICES */
+  .services{background:var(--mint);}
+  .grid-services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .card{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .card .num{font-family:'IBM Plex Mono',monospace;color:var(--marigold-dark);font-size:.78rem;}
+  .card h3{font-size:1.1rem;margin:10px 0 8px;}
+  .card p{font-size:.9rem;color:#4B5B54;margin:0;}
+
+  /* TEAM */
+  .grid-team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .person{text-align:left;}
+  .avatar{
+    width:100%;aspect-ratio:1;border-radius:var(--radius);
+    background:linear-gradient(155deg,var(--mint-deep),var(--mint));
+    display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;
+    border:1px solid var(--line);
+  }
+  .person h3{font-size:1.05rem;}
+  .person .role{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--pine);margin:4px 0 10px;text-transform:uppercase;letter-spacing:.06em;}
+  .person p.bio{font-size:.88rem;color:#4B5B54;margin:0;}
+
+  /* REVIEWS */
+  .reviews{background:var(--pine-dark);color:var(--mint);}
+  .reviews .sechead h2, .reviews .eyebrow{color:var(--mint);}
+  .reviews .sechead p{color:#B9C9C0;}
+  .grid-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .rcard{
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+    border-radius:var(--radius);padding:24px;
+  }
+  .rcard .stars{color:var(--marigold);font-size:.9rem;letter-spacing:2px;margin-bottom:12px;}
+  .rcard p{font-size:.92rem;margin:0 0 14px;color:#DCE8E1;}
+  .rcard .who{font-family:'IBM Plex Mono',monospace;font-size:.76rem;color:#9FB6AB;}
+
+  /* VISIT */
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+  .hourstable{width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:.86rem;margin-top:18px;}
+  .hourstable td{padding:9px 0;border-top:1px solid var(--line);}
+  .hourstable tr:first-child td{border-top:none;}
+  .hourstable td:last-child{text-align:right;color:var(--pine);}
+  .mapbox{
+    background:var(--mint);border:1px solid var(--line);border-radius:var(--radius);
+    aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;
+    flex-direction:column;gap:10px;color:var(--pine);
+  }
+  .mapbox .pin{font-size:2.4rem;}
+  .mapbox p{margin:0;font-family:'IBM Plex Mono',monospace;font-size:.8rem;}
+
+  /* FOOTER */
+  footer{background:var(--ink);color:#AFC0B7;padding:44px 0 28px;}
+  .footwrap{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px;}
+  .footwrap .brand{color:var(--mint);}
+  .footwrap .brand .mark{background:var(--marigold);color:var(--pine-dark);}
+  .footlinks{display:flex;gap:28px;font-size:.86rem;}
+  .footlinks a{text-decoration:none;color:#AFC0B7;}
+  .footlinks a:hover{color:var(--mint);}
+  .footbottom{
+    margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);
+    font-size:.78rem;color:#748179;font-family:'IBM Plex Mono',monospace;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;padding-top:40px;}
+    .hero h1{font-size:2.3rem;}
+    .grid-services, .grid-team, .grid-reviews{grid-template-columns:1fr;}
+    .visit{grid-template-columns:1fr;}
+    .navlinks{display:none;}
+  }
+
+  /* ===================== CHAT WIDGET (MOCK) ===================== */
+  /*
+    This is a placeholder chat widget so the page has a working bubble +
+    panel to test embed behavior (positioning, z-index, mobile layout).
+    To test the REAL VetKair widget, delete everything inside the
+    "MOCK WIDGET MARKUP/SCRIPT" comments below and paste the real
+    embed snippet in its place — the mount point stays bottom-right,
+    z-index 999, and should not conflict with anything else on the page.
+  */
+  #vk-launcher{
+    position:fixed;bottom:24px;right:24px;z-index:999;
+    width:60px;height:60px;border-radius:50%;
+    background:var(--pine);color:var(--mint);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 14px 30px -10px rgba(15,61,62,.55);
+    cursor:pointer;border:none;font-size:1.5rem;
+    transition:transform .15s;
+  }
+  #vk-launcher:hover{transform:scale(1.06);}
+  #vk-panel{
+    position:fixed;bottom:96px;right:24px;z-index:999;
+    width:340px;max-width:calc(100vw - 32px);
+    height:440px;max-height:calc(100vh - 140px);
+    background:var(--white);border:1px solid var(--line);border-radius:16px;
+    box-shadow:0 30px 60px -20px rgba(15,61,62,.4);
+    display:none;flex-direction:column;overflow:hidden;
+  }
+  #vk-panel.open{display:flex;}
+  #vk-head{
+    background:var(--pine);color:var(--mint);padding:16px 18px;
+    display:flex;align-items:center;gap:10px;
+  }
+  #vk-head .dot2{width:8px;height:8px;border-radius:50%;background:#3FAE60;box-shadow:0 0 0 3px rgba(63,174,96,.25);}
+  #vk-head .titles{display:flex;flex-direction:column;line-height:1.2;}
+  #vk-head .titles b{font-size:.92rem;}
+  #vk-head .titles span{font-size:.72rem;color:#B9C9C0;font-family:'IBM Plex Mono',monospace;}
+  #vk-body{flex:1;overflow-y:auto;padding:16px;background:var(--paper);display:flex;flex-direction:column;gap:10px;}
+  .vk-msg{max-width:80%;padding:9px 12px;border-radius:12px;font-size:.86rem;line-height:1.4;}
+  .vk-msg.bot{background:var(--mint);color:var(--ink);border-bottom-left-radius:3px;align-self:flex-start;}
+  .vk-msg.me{background:var(--pine);color:var(--white);border-bottom-right-radius:3px;align-self:flex-end;}
+  #vk-inputrow{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:var(--white);}
+  #vk-input{
+    flex:1;border:1px solid var(--line);border-radius:999px;padding:10px 14px;
+    font-family:'Work Sans',sans-serif;font-size:.86rem;outline:none;
+  }
+  #vk-input:focus{border-color:var(--pine);}
+  #vk-send{
+    width:38px;height:38px;border-radius:50%;border:none;background:var(--marigold);
+    color:var(--pine-dark);font-size:1rem;cursor:pointer;flex:none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand"><span class="mark">AC</span>Alder Creek Animal Hospital</div>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#team">Our Team</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Us</a>
+    </div>
+    <a href="#visit" class="btn gold">Book a Visit</a>
+  </nav>
+</header>
+
+<section class="hero wrap">
+  <div>
+    <p class="eyebrow">Millbrook, VT · Est. 2011</p>
+    <h1>Care that remembers <em>your dog's name.</em></h1>
+    <p class="lead">Alder Creek is a family-run animal hospital offering wellness care, dental work, surgery, and same-day urgent visits for dogs, cats, and small pets — with a team that's known most of our patients since they were puppies and kittens.</p>
+    <div class="hero-cta">
+      <a href="#visit" class="btn">Book a Visit</a>
+      <a href="#services" class="btn ghost">See Services</a>
+      <span class="hero-phone">or call (802) 555-0148</span>
+    </div>
+  </div>
+  <div>
+    <div class="ticker-card">
+      <div class="ticker-head">
+        <span class="eyebrow"><span class="dot"></span>Today's Openings — Tue, Jul 7</span>
+      </div>
+      <div class="ticker-row"><span>Wellness Exam</span><span class="slot">2:15 PM</span><span class="tag book">Book</span></div>
+      <div class="ticker-row"><span>Vaccine Update</span><span class="slot">3:00 PM</span><span class="tag book">Book</span></div>
+      <div class="ticker-row"><span>Dental Consult</span><span class="slot">Thu 9:30 AM</span><span class="tag">Waitlist</span></div>
+      <div class="ticker-row"><span>Urgent Care</span><span class="slot">Walk-ins to 6 PM</span><span class="tag">Open</span></div>
+    </div>
+    <div class="hero-illustration">🐾</div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">What We Treat</p>
+      <h2>Full-service veterinary care, under one roof</h2>
+      <p>From annual checkups to same-day illness visits, our team handles it without a referral out.</p>
+    </div>
+    <div class="grid-services">
+      <div class="card"><p class="num">01</p><h3>Wellness Exams</h3><p>Annual and senior checkups, nose to tail, with time built in for your questions.</p></div>
+      <div class="card"><p class="num">02</p><h3>Vaccinations</h3><p>Core and lifestyle vaccines scheduled around your pet's actual risk, not a generic checklist.</p></div>
+      <div class="card"><p class="num">03</p><h3>Dental Care</h3><p>Cleanings, extractions, and digital dental X-rays done same-day under monitored anesthesia.</p></div>
+      <div class="card"><p class="num">04</p><h3>Surgery</h3><p>Spay/neuter, mass removals, and soft-tissue surgery with a dedicated recovery tech on staff.</p></div>
+      <div class="card"><p class="num">05</p><h3>Urgent Care</h3><p>Walk-in slots held open daily for limping, vomiting, or "something's off" visits.</p></div>
+      <div class="card"><p class="num">06</p><h3>Nutrition Counseling</h3><p>Weight and diet plans for pets managing diabetes, kidney disease, or joint issues.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Who You'll See</p>
+      <h2>A small team that stays small on purpose</h2>
+      <p>Three doctors, no rotating locums — so the vet who knows your pet's history is the one in the room.</p>
+    </div>
+    <div class="grid-team">
+      <div class="person"><div class="avatar">🐩</div><h3>Dr. Naomi Reyes, DVM</h3><p class="role">Medical Director</p><p class="bio">15 years in general practice; leads dental and surgical cases.</p></div>
+      <div class="person"><div class="avatar">🦴</div><h3>Dr. Aaron Whitfield, DVM</h3><p class="role">Associate Veterinarian</p><p class="bio">Focus on senior wellness and chronic disease management.</p></div>
+      <div class="person"><div class="avatar">🐈</div><h3>Dr. Priya Nandakumar, DVM</h3><p class="role">Associate Veterinarian</p><p class="bio">Fear-free certified; handles most of our nervous-cat visits.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">From Our Clients</p>
+      <h2>What pet parents say</h2>
+    </div>
+    <div class="grid-reviews">
+      <div class="rcard"><div class="stars">★★★★★</div><p>"Got us in same-day when our lab wouldn't stop limping. Dr. Whitfield called that evening to check in."</p><div class="who">— Megan T., Millbrook</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>"First vet office where my cat doesn't shake in the carrier the whole ride home. Fear-free visits really work."</p><div class="who">— Carlos D., Weston</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>"14 years with Alder Creek across three dogs. They remember birthdays and quirks better than some of my friends."</p><div class="who">— Renee S., Millbrook</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit wrap" id="visit">
+  <div>
+    <p class="eyebrow">Hours & Location</p>
+    <h2 style="font-size:2.1rem;margin-top:8px;">Come say hello</h2>
+    <table class="hourstable">
+      <tr><td>Monday – Friday</td><td>7:30 AM – 6:00 PM</td></tr>
+      <tr><td>Saturday</td><td>8:00 AM – 1:00 PM</td></tr>
+      <tr><td>Sunday</td><td>Closed</td></tr>
+      <tr><td>Urgent walk-ins</td><td>Until 6:00 PM daily</td></tr>
+    </table>
+    <p style="margin-top:22px;font-size:.92rem;color:#4B5B54;">241 Alder Creek Road, Millbrook, VT 05055<br>(802) 555-0148 · hello@aldercreekvet.example</p>
+    <a href="#" class="btn" style="margin-top:18px;">Book a Visit</a>
+  </div>
+  <div class="mapbox">
+    <div class="pin">📍</div>
+    <p>241 Alder Creek Road, Millbrook, VT</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footwrap">
+      <div class="brand"><span class="mark">AC</span>Alder Creek Animal Hospital</div>
+      <div class="footlinks">
+        <a href="#services">Services</a>
+        <a href="#team">Our Team</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit Us</a>
+      </div>
+    </div>
+    <div class="footbottom">
+      <span>© 2026 Alder Creek Animal Hospital — mock site for chatbot embed testing</span>
+      <span>Not a real business</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOCK WIDGET MARKUP — swap for real VetKair embed ============ -->
+<button id="vk-launcher" aria-label="Open chat">💬</button>
+<div id="vk-panel">
+  <div id="vk-head">
+    <span class="dot2"></span>
+    <div class="titles"><b>Alder Creek Assistant</b><span>Typically replies instantly</span></div>
+  </div>
+  <div id="vk-body">
+    <div class="vk-msg bot">Hi! I'm the front-desk assistant for Alder Creek Animal Hospital. Want help booking a visit, or checking office hours?</div>
+  </div>
+  <div id="vk-inputrow">
+    <input id="vk-input" type="text" placeholder="Type a message…">
+    <button id="vk-send" aria-label="Send">➤</button>
+  </div>
+</div>
+<script>
+  // ---- MOCK WIDGET SCRIPT — replace with real VetKair embed <script> tag ----
+  const vkLauncher = document.getElementById('vk-launcher');
+  const vkPanel = document.getElementById('vk-panel');
+  const vkBody = document.getElementById('vk-body');
+  const vkInput = document.getElementById('vk-input');
+  const vkSend = document.getElementById('vk-send');
+
+  vkLauncher.addEventListener('click', () => vkPanel.classList.toggle('open'));
+
+  function addMsg(text, who){
+    const div = document.createElement('div');
+    div.className = 'vk-msg ' + who;
+    div.textContent = text;
+    vkBody.appendChild(div);
+    vkBody.scrollTop = vkBody.scrollHeight;
+  }
+
+  const canned = [
+    "I can help with that — what's your pet's name and what's the visit for?",
+    "We have openings today at 2:15 PM and 3:00 PM, or Thursday at 9:30 AM. Want me to hold one?",
+    "Got it — I've noted that down. Our team will confirm shortly.",
+    "You can also reach the front desk directly at (802) 555-0148."
+  ];
+  let cannedIdx = 0;
+
+  function sendMsg(){
+    const text = vkInput.value.trim();
+    if(!text) return;
+    addMsg(text, 'me');
+    vkInput.value = '';
+    setTimeout(() => {
+      addMsg(canned[cannedIdx % canned.length], 'bot');
+      cannedIdx++;
+    }, 500);
+  }
+  vkSend.addEventListener('click', sendMsg);
+  vkInput.addEventListener('keydown', e => { if(e.key === 'Enter') sendMsg(); });
+</script>
+<!-- ============ END MOCK WIDGET — real embed goes here instead ============ -->
+
+</body>
+</html>
