@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!-- GMG Consent Manager: Google Consent Mode defaults -->
+<script>
+window.dataLayer=window.dataLayer||[];
+window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+gtag('consent','default',{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","functionality_storage":"denied","personalization_storage":"denied","security_storage":"granted","wait_for_update":2000});
+(function(){
+ try {
+  var name="gmg_consent";
+  var raw=document.cookie.split('; ').find(function(v){return v.indexOf(name+'=')===0;});
+  if(!raw){return;}
+  var value=JSON.parse(decodeURIComponent(raw.substring(name.length+1)));
+  if(!value||Number(value.revision)!==1||!value.categories){return;}
+  var c=value.categories;
+  gtag('consent','update',{
+   analytics_storage:c.analytics?'granted':'denied',
+   ad_storage:c.marketing?'granted':'denied',
+   ad_user_data:c.marketing?'granted':'denied',
+   ad_personalization:c.marketing?'granted':'denied',
+   functionality_storage:c.functional?'granted':'denied',
+   personalization_storage:c.functional?'granted':'denied',
+   security_storage:'granted'
+  });
+ } catch(e) {}
+})();
+</script>
+		
+	<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Campbell Veterinary | Eatonton, Milledgeville &amp; Monticello GA</title>
+<link data-rocket-prefetch href="https://connect.facebook.net" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://cdnjs.cloudflare.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://fonts.googleapis.com" rel="dns-prefetch"><link rel="preload" data-rocket-preload as="image" href="https://campbellveterinaryhospital.com/wp-content/uploads/2019/12/back1.png" fetchpriority="high">
+	<meta name="description" content="Serving Eatonton, Milledgeville &amp; Monticello. Independent. Walk-in only. Preventive care focused. Middle Georgia&#039;s modern vet with in-house diagnostics &amp; drive-thru pharmacy." />
+	<link rel="canonical" href="https://campbellveterinaryhospital.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Campbell Veterinary | Eatonton, Milledgeville &amp; Monticello GA" />
+	<meta property="og:description" content="Serving Eatonton, Milledgeville &amp; Monticello. Independent. Walk-in only. Preventive care focused. Middle Georgia&#039;s modern vet with in-house diagnostics &amp; drive-thru pharmacy." />
+	<meta property="og:url" content="https://campbellveterinaryhospital.com/" />
+	<meta property="og:site_name" content="Campbell Veterinary Hospital" />
+	<meta property="article:modified_time" content="2026-05-08T13:42:53+00:00" />
+	<meta property="og:image" content="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/1-1.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/campbellveterinaryhospital.com\/","url":"https:\/\/campbellveterinaryhospital.com\/","name":"Campbell Veterinary | Eatonton, Milledgeville & Monticello GA","isPartOf":{"@id":"https:\/\/campbellveterinaryhospital.com\/#website"},"about":{"@id":"https:\/\/campbellveterinaryhospital.com\/#organization"},"primaryImageOfPage":{"@id":"https:\/\/campbellveterinaryhospital.com\/#primaryimage"},"image":{"@id":"https:\/\/campbellveterinaryhospital.com\/#primaryimage"},"thumbnailUrl":"https:\/\/campbellveterinaryhospital.com\/wp-content\/uploads\/2021\/01\/1-1.png","datePublished":"2019-11-29T09:28:02+00:00","dateModified":"2026-05-08T13:42:53+00:00","description":"Serving Eatonton, Milledgeville & Monticello. Independent. Walk-in only. Preventive care focused. Middle Georgia's modern vet with in-house diagnostics & drive-thru pharmacy.","breadcrumb":{"@id":"https:\/\/campbellveterinaryhospital.com\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/campbellveterinaryhospital.com\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/campbellveterinaryhospital.com\/#primaryimage","url":"https:\/\/campbellveterinaryhospital.com\/wp-content\/uploads\/2021\/01\/1-1.png","contentUrl":"https:\/\/campbellveterinaryhospital.com\/wp-content\/uploads\/2021\/01\/1-1.png","width":1200,"height":950,"caption":"A dog and a cat sit together on a red background, with the dog looking at the camera and the cat tilting its head."},{"@type":"BreadcrumbList","@id":"https:\/\/campbellveterinaryhospital.com\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https:\/\/campbellveterinaryhospital.com\/#website","url":"https:\/\/campbellveterinaryhospital.com\/","name":"Campbell Veterinary Hospital","description":"Middle Georgia Vet","publisher":{"@id":"https:\/\/campbellveterinaryhospital.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/campbellveterinaryhospital.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/campbellveterinaryhospital.com\/#organization","name":"Campbell Veterinary Hospital","url":"https:\/\/campbellveterinaryhospital.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/campbellveterinaryhospital.com\/#\/schema\/logo\/image\/","url":"https:\/\/campbellveterinaryhospital.com\/wp-content\/uploads\/2021\/01\/cropped-Primary-Logo-for-dark-bkgrd.png","contentUrl":"https:\/\/campbellveterinaryhospital.com\/wp-content\/uploads\/2021\/01\/cropped-Primary-Logo-for-dark-bkgrd.png","width":800,"height":343,"caption":"Campbell Veterinary Hospital"},"image":{"@id":"https:\/\/campbellveterinaryhospital.com\/#\/schema\/logo\/image\/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel="alternate" type="application/rss+xml" title="Campbell Veterinary Hospital &raquo; Feed" href="https://campbellveterinaryhospital.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Campbell Veterinary Hospital &raquo; Comments Feed" href="https://campbellveterinaryhospital.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://campbellveterinaryhospital.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcampbellveterinaryhospital.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://campbellveterinaryhospital.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcampbellveterinaryhospital.com%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wpfront-notification-bar-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.min.css?ver=3.5.1.05102' media='all' />
+<link rel='stylesheet' id='genericons-css' href='https://campbellveterinaryhospital.com/wp-content/themes/et-pet/genericons/genericons.css?ver=3.4.1' media='all' />
+<link rel='stylesheet' id='ltheme-style-css' href='https://campbellveterinaryhospital.com/wp-content/themes/et-pet/style.css?ver=7.0.2' media='all' />
+<link rel='stylesheet' id='ltheme-block-style-css' href='https://campbellveterinaryhospital.com/wp-content/themes/et-pet/css/blocks.css?ver=20181230' media='all' />
+<link rel='stylesheet' id='ltheme-woocommerce-css' href='https://campbellveterinaryhospital.com/wp-content/themes/et-pet/css/woocommerce.css?ver=20160816' media='all' />
+<link rel='stylesheet' id='ltheme-fontawesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?ver=20160816' media='all' />
+<link rel='stylesheet' id='ltheme-custom-layout-css' href='https://campbellveterinaryhospital.com/wp-content/themes/et-pet/css/custom-layout.css?ver=20160816' media='all' />
+<link rel='stylesheet' id='ltheme-text-effect-css' href='https://campbellveterinaryhospital.com/wp-content/themes/et-pet/css/text-effect.css?ver=20160816' media='all' />
+<link rel='stylesheet' id='ltheme-custom-css' href='https://campbellveterinaryhospital.com/wp-content/themes/et-pet/css/custom.css?ver=20160816' media='all' />
+<link rel='stylesheet' id='gmg-consent-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/gmg-consent-manager/public/css/banner.css?ver=2.0.15' media='all' />
+<style id="gmg-consent-inline-css">
+#gmg-consent-banner,#gmg-pref-modal,#gmg-reopen-btn{--gmg-bg:#ffffff;--gmg-text:#000000;--gmg-primary:#25325b;--gmg-button-text:#ffffff;--gmg-accent:#e12d29;}
+/*# sourceURL=gmg-consent-inline-css */
+</style>
+<link rel='stylesheet' id='pafe-1411-css' href='https://campbellveterinaryhospital.com/wp-content/uploads/premium-addons-elementor/pafe-1411.css?ver=1778247773' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.53.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='elementor-post-1781-css' href='https://campbellveterinaryhospital.com/wp-content/uploads/elementor/css/post-1781.css?ver=1784752100' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.11.87' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='widget-image-box-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInLeft-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInRight-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='e-animation-float-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-float.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='e-motion-fx-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.2.0' media='all' />
+<link rel='stylesheet' id='pa-slick-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/slick.min.css?ver=4.11.87' media='all' />
+<link rel='stylesheet' id='elementor-post-1411-css' href='https://campbellveterinaryhospital.com/wp-content/uploads/elementor/css/post-1411.css?ver=1784752477' media='all' />
+<link rel='stylesheet' id='elementor-gf-nunito-css' href='https://fonts.googleapis.com/css?family=Nunito:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=auto' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
+<script id="jquery-core-js" src="https://campbellveterinaryhospital.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://campbellveterinaryhospital.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="wpfront-notification-bar-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.min.js?ver=3.5.1.05102"></script>
+<script id="font-awesome-4-shim-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=4.2.0"></script>
+<link rel="https://api.w.org/" href="https://campbellveterinaryhospital.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://campbellveterinaryhospital.com/wp-json/wp/v2/pages/1411" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://campbellveterinaryhospital.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.2" />
+<link rel='shortlink' href='https://campbellveterinaryhospital.com/' />
+		<!-- Custom Logo: hide header text -->
+		<style id="custom-logo-css">
+			.site-title, .yourPrefix-site-description {
+				position: absolute;
+				clip-path: inset(50%);
+			}
+		</style>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href='https://fonts.googleapis.com/css2?display=swap&family=ABeeZee&family=Nunito:wght@600;700;900' rel='stylesheet'><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '520859509052163');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=520859509052163&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="vx1EP06o47YPiMI3PX37RyN6oPXWHNsQa890blFb5HE" />
+<!-- Google Search Console End -->
+	<style type="text/css">
+		
+		body {
+			background-color: #cddff4;
+		}
+
+		.top-head {
+			background-color: ;
+		}
+		.top-head,
+		.top-head ul li,
+		.top-head ul li i,
+		.top-head p,
+		.top-head .textwidget {
+			color: ;
+		}
+		.top-head a {
+			color: ;
+		}
+
+		.top-head a:hover {
+			color: ;
+		}
+
+
+		header.site-header {
+			background-color: ;
+		}
+
+		header.site-header.is-sticky {
+			background-color: #ffffff;
+		}
+
+		.main-navigation .primary-menu {
+			color: #25325b;
+		}
+
+		.main-navigation .primary-menu > li > a {
+			color: #ffffff;
+		}
+		
+		.main-navigation .primary-menu li li a {
+			color: #25325b;
+		}
+
+		.main-navigation ul ul.sub-menu {
+			background-color: ;
+		}
+
+		#site-header-menu.toggled-on {
+			background-color: #25325b;
+		}
+
+
+		body .main-navigation li:hover > a, 
+		body .main-navigation li.focus > a, 
+		body .main-navigation li.current-menu-item > a, 
+		body .main-navigation li.current-menu-parent > a {
+			color: #e12d29;
+		}
+
+		.main-footer,
+		.main-footer h2,
+		.main-footer p,
+		.main-footer .textwidget,
+		.main-footer ul li {
+			color: #ffffff;
+		}
+		.main-footer a {
+			color: #ffffff;
+		}
+
+		.main-footer a:hover {
+			color: ;
+		}
+
+		.main-footer {
+			background-color: #ffffff;
+		}
+
+
+		.site-footer,
+		.site-footer p {
+			color: #e12d29;
+		}
+		.site-footer a {
+			color: #ffffff;
+		}
+
+		.site-footer a:hover {
+			color: #e12d29;
+		}
+
+		.site-footer {
+			background-color: #25325b;
+		}
+
+	</style>
+
+<meta name="generator" content="Elementor 4.2.0; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-icon-270x270.png" />
+<style id="wp-custom-css">
+@media(max-width: 910px) {
+    body.home #menu-main-menu {
+        background: #25325b;
+        padding: 0 20px;
+    }
+
+    body.home .site-header.is-sticky #menu-main-menu {
+        background: #25325b;
+			  padding: 0 20px; !important
+			
+    }
+	body.home .main-navigation a {
+		color: #fff !important;
+	}
+
+/*** Canvas Menu LT ***/
+.menu-toggle:hover, .menu-toggle:focus,
+.menu-toggle.toggled-on:hover, .menu-toggle.toggled-on:focus,
+.menu-toggle.toggled-on {
+	border-color: #fff;
+    color: #fff;
+}
+.menu-toggle:before {
+	color: #fff;
+}
+.menu-toggle.toggled-on:before,
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+	color: #fff !important;
+}
+body.home .dropdown-toggle:after {
+	border-color: #fff;
+	border-left-width: 1px;
+	color: #fff !important;
+}
+.dropdown-toggle {
+	color: #fff;
+}
+</style>
+	<style id="egf-frontend-styles" type="text/css">
+		p {font-family: 'ABeeZee', sans-serif;font-style: normal;font-weight: 400;} h1 {font-family: 'Nunito', sans-serif;font-style: normal;font-weight: 900;} h2 {font-family: 'Nunito', sans-serif;font-style: normal;font-weight: 900;} h3 {font-family: 'Nunito', sans-serif;font-style: normal;font-weight: 900;} h4 {font-family: 'Nunito', sans-serif;font-style: normal;font-weight: 700;} h5 {font-family: 'Nunito', sans-serif;font-style: normal;font-weight: 600;} h6 {font-family: 'Nunito', sans-serif;font-style: normal;font-weight: 600;} a, link, li, main-navigation, label, button, select, comment-reply-title, input, dt, th, td, span, form, div, ::placeholder {font-family: 'ABeeZee', sans-serif;font-style: normal;font-weight: 400;} 	</style>
+		
+<style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><meta name="generator" content="WP Rocket 3.23" data-wpr-features="wpr_preconnect_external_domains wpr_automatic_lazy_rendering wpr_oci wpr_cdn wpr_desktop" /></head>
+
+<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-1411 wp-custom-logo wp-embed-responsive wp-theme-et-pet no-sidebar elementor-default elementor-template-full-width elementor-kit-1781 elementor-page elementor-page-1411">
+<div  id="page" class="site">
+	<!-- Top Head -->
+	<div class='top-head'>
+		<div class='container'>
+
+								</div>
+	</div>
+	<!-- End Top Head -->
+	<header  id="masthead" class="site-header" role="banner">
+
+
+
+			<div  class="site-header-main">
+				<div class="site-branding">
+					<a href="https://campbellveterinaryhospital.com/" class="custom-logo-link" rel="home" aria-current="page"><img fetchpriority="high" width="800" height="343" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-Primary-Logo-for-dark-bkgrd.png" class="custom-logo" alt="Campbell Veterinary Hospital logo featuring a dog and cat illustration." decoding="async" srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-Primary-Logo-for-dark-bkgrd.png 800w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-Primary-Logo-for-dark-bkgrd-500x214.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-Primary-Logo-for-dark-bkgrd-768x329.png 768w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/cropped-Primary-Logo-for-dark-bkgrd-600x257.png 600w" sizes="(max-width: 800px) 85vw, 800px" /></a>
+											<p class="site-title"><a href="https://campbellveterinaryhospital.com/" rel="home">Campbell Veterinary Hospital</a></p>
+										
+				</div><!-- .site-branding -->
+
+									<button id="menu-toggle" class="menu-toggle">Menu</button>
+
+					<div id="site-header-menu" class="site-header-menu">
+													<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+								<div class="menu-main-menu-container"><ul id="menu-main-menu" class="primary-menu"><li id="menu-item-1454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1411 current_page_item menu-item-1454"><a href="https://campbellveterinaryhospital.com/" aria-current="page">Home</a></li>
+<li id="menu-item-527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-527"><a href="https://campbellveterinaryhospital.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1974"><a href="https://campbellveterinaryhospital.com/about-us/what-sets-us-apart/">What Sets Us Apart</a></li>
+	<li id="menu-item-2792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2792"><a href="https://campbellveterinaryhospital.com/career-opportunities/">Career Opportunities</a></li>
+</ul>
+</li>
+<li id="menu-item-592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-592"><a href="https://campbellveterinaryhospital.com/services/">Services</a></li>
+<li id="menu-item-1879" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1879"><a href="https://campbellveterinaryhospital.com/forms/">Forms</a>
+<ul class="sub-menu">
+	<li id="menu-item-2274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2274"><a href="https://campbellveterinaryhospital.com/forms/client-consent-form/">Drop-Off Form</a></li>
+	<li id="menu-item-2273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2273"><a href="https://campbellveterinaryhospital.com/forms/new-client-record-form/">New Client Record Form</a></li>
+	<li id="menu-item-2712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2712"><a href="https://campbellveterinaryhospital.com/forms/prescription-refill-form/">Prescription Refill Form</a></li>
+	<li id="menu-item-2761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2761"><a href="https://campbellveterinaryhospital.com/forms/pay-your-bill-form/">Pay Your Bill Form</a></li>
+</ul>
+</li>
+<li id="menu-item-1878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1878"><a href="https://campbellveterinaryhospital.com/galleries/">Galleries</a></li>
+<li id="menu-item-1902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1902"><a href="https://campbellveterinaryhospital.com/did-you-know/">Did You Know?</a></li>
+<li id="menu-item-521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a href="https://campbellveterinaryhospital.com/contact-us/">Get In Touch</a></li>
+<li id="menu-item-2713" class="top-button menu-item menu-item-type-custom menu-item-object-custom menu-item-2713"><a href="/check-in-online/">Check In Online</a></li>
+</ul></div>							</nav><!-- .main-navigation -->
+						
+											</div><!-- .site-header-menu -->
+				
+				
+			</div><!-- .site-header-main -->
+		</header><!-- .site-header -->
+	<div  class="site-inner">
+		
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>				
+
+		<div  id="content" class="site-content">
+			
+		<div data-elementor-type="wp-page" data-elementor-id="1411" class="elementor elementor-1411" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-d08a52f elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d08a52f" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-416f79c home-1-left elementor-invisible" data-id="416f79c" data-element_type="column" data-e-type="column" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9c5271f elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="9c5271f" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h1 class="elementor-image-box-title">Redefining Veterinary Care in Middle Georgia</h1></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-40daed3 elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="40daed3" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">We are a modern practice where high-tech meets high touch.</h3><p class="elementor-image-box-description"><br>We are breaking conventions by focusing on a more efficient yet individualized experience for all of your pets.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f2bed25 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="f2bed25" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://campbellveterinaryhospital.com/services/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-paw"></i>			</span>
+									<span class="elementor-button-text">VIEW OUR SERVICES</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-534fc1b elementor-invisible" data-id="534fc1b" data-element_type="column" data-e-type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-df53301 elementor-widget elementor-widget-image" data-id="df53301" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="1200" height="950" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/1-1.png" class="attachment-full size-full wp-image-1835" alt="A dog and a cat sit together on a red background, with the dog looking at the camera and the cat tilting its head." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/1-1.png 1200w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/1-1-500x396.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/1-1-1024x811.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/1-1-768x608.png 768w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/1-1-600x475.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-234f4e32 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="234f4e32" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-167d5f3b" data-id="167d5f3b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-2fd7085d elementor-section-content-middle elementor-section-full_width elementor-reverse-mobile elementor-section-height-default elementor-section-height-default" data-id="2fd7085d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-101e9a3" data-id="101e9a3" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3cb01cf0 elementor-widget elementor-widget-image" data-id="3cb01cf0" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="1024" height="811" src="https://campbellveterinaryhospital.com/wp-content/uploads/2023/01/pharmacy-1024x811-1.png" class="attachment-full size-full wp-image-2901" alt="Building exterior with red and white walls, featuring &quot;Rx&quot; logo and yellow poles." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2023/01/pharmacy-1024x811-1.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2023/01/pharmacy-1024x811-1-500x396.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2023/01/pharmacy-1024x811-1-768x608.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-72dacdfe" data-id="72dacdfe" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2e52b48a elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="2e52b48a" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Drive-Thru Pharmacy</h3></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7477697c elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="7477697c" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">The convenience you need with the care your pet deserves</h3><p class="elementor-image-box-description"><br>Our practice offers the convenience of a drive-thru pharmacy and online prescription requests.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c9096e1 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="c9096e1" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://campbellveterinaryhospital.com/contact-us/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-paw"></i>			</span>
+									<span class="elementor-button-text">CONTACT US TODAY</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6f9de16a elementor-section-content-middle elementor-section-stretched elementor-section-full_width home-newpat elementor-section-height-default elementor-section-height-default" data-id="6f9de16a" data-element_type="section" data-e-type="section" id="download" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5d327814" data-id="5d327814" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2548eb82 elementor-view-default elementor-widget elementor-widget-icon" data-id="2548eb82" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-map-marker-alt"></i>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d6ae2aa elementor-widget elementor-widget-heading" data-id="d6ae2aa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Accepting New Patients!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6e6b538 elementor-widget elementor-widget-text-editor" data-id="6e6b538" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<br>We are conveniently located off of Highway 441 at:<br>
+102 Walmart Dr. <br>Eatonton, GA 31024								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-279f4de0" data-id="279f4de0" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5cd267a0 elementor-hidden-tablet elementor-hidden-phone elementor-invisible elementor-widget elementor-widget-image" data-id="5cd267a0" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="1200" height="950" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/campbell.png" class="elementor-animation-float attachment-full size-full wp-image-1790" alt="Campbell Veterinary Hospital sign on a building, featuring a logo of a cat and dog." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/campbell.png 1200w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/campbell-500x396.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/campbell-1024x811.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/campbell-768x608.png 768w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/campbell-600x475.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2daaeb86 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2daaeb86" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-458bf9de" data-id="458bf9de" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-3ddb64af elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="3ddb64af" data-element_type="section" data-e-type="section" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e87bae1" data-id="e87bae1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c509728 elementor-widget elementor-widget-image" data-id="c509728" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="840" height="665" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/hey-brody-3-1024x811.png" class="attachment-large size-large wp-image-1844" alt="A man in a brown jacket leans against a wooden counter in a light-colored room." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/hey-brody-3-1024x811.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/hey-brody-3-500x396.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/hey-brody-3-768x608.png 768w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/hey-brody-3-600x475.png 600w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/hey-brody-3.png 1200w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6a4ebb19" data-id="6a4ebb19" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-719a7804 elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="719a7804" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h2 class="elementor-image-box-title">About Dr. Campbell</h2><p class="elementor-image-box-description"><br>I graduated from the University of Georgia College of Veterinary Medicine in 2006 and have been practicing in the middle Georgia area for over 15 years. After practicing at Heart of Georgia Animal Care for many years, I have opened my own state of the art facility located in Eatonton, GA.
+As a general and mixed practice veterinarian, I believe strongly in providing the highest quality care, at  reasonable rates, while focusing on a preventative medicine approach.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8d88f79 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="8d88f79" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://campbellveterinaryhospital.com/about-us">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-paw"></i>			</span>
+									<span class="elementor-button-text">Learn More</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-26f38b40 lt-services elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="26f38b40" data-element_type="section" data-e-type="section" id="lt-services">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-75858e51 lt-services-item" data-id="75858e51" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-5758e271 elementor-widget elementor-widget-image" data-id="5758e271" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="140" height="140" src="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/sitting-free-img.png" class="attachment-large size-large wp-image-1418" alt="A dog and a cat sitting together inside a heart shape." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/sitting-free-img.png 140w, https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/sitting-free-img-100x100.png 100w" sizes="(max-width: 140px) 85vw, 140px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-645de9e0 elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="645de9e0" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://campbellveterinaryhospital.com/about-us/">About</a></h3><p class="elementor-image-box-description">Read more about the heart behind our office and our exceptional team!</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2c80b6d elementor-mobile-align-center lt-services-link elementor-widget elementor-widget-button" data-id="2c80b6d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://campbellveterinaryhospital.com/about-us/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-caret-right"></i>			</span>
+									<span class="elementor-button-text">view more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7abcb4b1 lt-services-item" data-id="7abcb4b1" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7267493c elementor-widget elementor-widget-image" data-id="7267493c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="140" height="140" src="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/minding-free-img.png" class="attachment-large size-large wp-image-1419" alt="A simple line drawing of a sitting dog in profile view." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/minding-free-img.png 140w, https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/minding-free-img-100x100.png 100w" sizes="(max-width: 140px) 85vw, 140px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-6c08521e elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="6c08521e" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://campbellveterinaryhospital.com/services/">Services</a></h3><p class="elementor-image-box-description">We offer veterinary services with a strong focus on preventative care and medical therapy.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5db55329 elementor-mobile-align-center lt-services-link elementor-widget elementor-widget-button" data-id="5db55329" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://campbellveterinaryhospital.com/services/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-caret-right"></i>			</span>
+									<span class="elementor-button-text">view more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-12290d32 lt-services-item" data-id="12290d32" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fe797b8 elementor-widget elementor-widget-image" data-id="fe797b8" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="140" height="140" src="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/training-free-img.png" class="attachment-large size-large wp-image-1420" alt="A line drawing of a dog jumping over a hurdle." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/training-free-img.png 140w, https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/training-free-img-100x100.png 100w" sizes="(max-width: 140px) 85vw, 140px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-5eb28890 elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="5eb28890" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://campbellveterinaryhospital.com/forms/">Forms</a></h3><p class="elementor-image-box-description">Take a look at our forms and policies before coming in!</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7e86cdec elementor-mobile-align-center lt-services-link elementor-widget elementor-widget-button" data-id="7e86cdec" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://campbellveterinaryhospital.com/forms/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-caret-right"></i>			</span>
+									<span class="elementor-button-text">view more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-30f4fcb7 lt-services-item" data-id="30f4fcb7" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-72c5e39b elementor-widget elementor-widget-image" data-id="72c5e39b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="140" height="140" src="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/grooming-free-img.png" class="attachment-large size-large wp-image-1421" alt="Two crossed scissors and a comb icon." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/grooming-free-img.png 140w, https://campbellveterinaryhospital.com/wp-content/uploads/2019/11/grooming-free-img-100x100.png 100w" sizes="(max-width: 140px) 85vw, 140px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-14f39479 elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="14f39479" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://campbellveterinaryhospital.com/galleries/">Galleries</a></h3><p class="elementor-image-box-description">Campbell Veterinary Hospital has been dedicated to helping pets and their owners for years now. Take a look for yourself!</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-69d7190a elementor-mobile-align-center lt-services-link elementor-widget elementor-widget-button" data-id="69d7190a" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://campbellveterinaryhospital.com/galleries">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-caret-right"></i>			</span>
+									<span class="elementor-button-text">view more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-59b2f6b elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="59b2f6b" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d7ae965" data-id="d7ae965" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-5e1a33a elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5e1a33a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d9b68ea" data-id="d9b68ea" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ef18acd elementor-widget elementor-widget-image-box" data-id="ef18acd" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h2 class="elementor-image-box-title">Connect with us!</h2></div></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-12bd164" data-id="12bd164" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-eca4482 elementor-shape-circle elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="eca4482" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-73cd1b5" href="https://www.facebook.com/CampbellVeterinaryHospital">
+						<span class="elementor-screen-only">Facebook-f</span>
+						<i aria-hidden="true" class="fab fa-facebook-f"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-9fde8c1" href="http://instagram.com/campbellvethospital" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i aria-hidden="true" class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-yelp elementor-repeater-item-435b8a1" href="https://www.yelp.com/biz/dean-a-campbell-dvm-eatonton-7">
+						<span class="elementor-screen-only">Yelp</span>
+						<i aria-hidden="true" class="fab fa-yelp"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6355867d elementor-section-content-bottom elementor-section-stretched lt-team-item elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6355867d" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-48e4889c" data-id="48e4889c" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-5f977500 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5f977500" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-73bb950c" data-id="73bb950c" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3310a47 elementor-widget elementor-widget-heading" data-id="3310a47" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Client Testimonials</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-19a56781 elementor-widget elementor-widget-image-box" data-id="19a56781" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h2 class="elementor-image-box-title">Happy Pets!</h2></div></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-57cfb22" data-id="57cfb22" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7d813813 lt-team elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7d813813" data-element_type="section" data-e-type="section" id="lt-team">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4c421194 lt-team-item-small" data-id="4c421194" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-50caeb92 elementor-position-top elementor-widget elementor-widget-image-box" data-id="50caeb92" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="750" height="750" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-750x750.png" class="attachment-thumbnail size-thumbnail wp-image-1853" alt="A happy dog with a red bandana lying on green grass, tongue out, in a sunny outdoor setting." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-750x750.png 750w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-500x500.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-1024x1024.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-768x768.png 768w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-300x300.png 300w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-600x600.png 600w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6-100x100.png 100w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/6.png 1200w" sizes="(max-width: 750px) 85vw, 750px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Dr. Campbell has been our family vet since he opened. We trust him and will make the drive to Eatonton just as we drove to Milledgeville to give our babies the best care we can.</h3><p class="elementor-image-box-description">Angie Hunt</p></div></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8c61ba9 lt-team-item-small" data-id="8c61ba9" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-17a036be elementor-position-top elementor-widget elementor-widget-image-box" data-id="17a036be" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="750" height="750" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-750x750.png" class="attachment-thumbnail size-thumbnail wp-image-1854" alt="A close-up of a tabby cat with striking blue eyes, lying on a soft surface." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-750x750.png 750w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-500x500.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-1024x1024.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-768x768.png 768w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-300x300.png 300w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-600x600.png 600w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7-100x100.png 100w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/01/7.png 1200w" sizes="(max-width: 750px) 85vw, 750px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Dr. Campbell is the only one I trust with my babies. He is the absolute best.</h3><p class="elementor-image-box-description">Bj Weaver</p></div></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-17563a06 lt-team-item-small" data-id="17563a06" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-952714 elementor-position-top elementor-widget elementor-widget-image-box" data-id="952714" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="750" height="750" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/02/chick-750x750.jpg" class="attachment-thumbnail size-thumbnail wp-image-2637" alt="A brown hen standing on green grass with a blurred background." /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">I have been seeing Dr. Campbell for many years since he started out in Gordon, GA and then went to Milledgeville. My family will be seeing him in Eatonton. He has looked after my chickens for many years now.</h3><p class="elementor-image-box-description">Brittany N. Thompson
+</p></div></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fd9c78f elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fd9c78f" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5c15292" data-id="5c15292" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-52ce964 elementor-widget elementor-widget-heading" data-id="52ce964" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Did You Know? </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-24fe27f elementor-widget elementor-widget-heading" data-id="24fe27f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">FROM OUR BLOG</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-34dee12 premium-blog-align-left elementor-widget elementor-widget-premium-addon-blog" data-id="34dee12" data-element_type="widget" data-e-type="widget" data-widget_type="premium-addon-blog.default">
+				<div class="elementor-widget-container">
+					
+		
+
+				<div class="premium-blog-wrap  premium-blog-list" data-page="1411">
+									<div class="premium-blog-post-outer-container" data-total="2">
+			<div class="premium-blog-post-container premium-blog-skin-side">
+									<div class="premium-blog-thumb-effect-wrapper">
+						<div class="premium-blog-thumbnail-container premium-blog-zoomin-effect">
+							<img loading="lazy" decoding="async" width="1500" height="1080" src="https://campbellveterinaryhospital.com/wp-content/uploads/2022/10/Untitled-design-91.jpg" class="attachment-full size-full wp-image-2900" alt="A dog sits with a sign reading &quot;TRICK OR TREAT&quot; in front of carved pumpkins and autumn leaves." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2022/10/Untitled-design-91.jpg 1500w, https://campbellveterinaryhospital.com/wp-content/uploads/2022/10/Untitled-design-91-500x360.jpg 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2022/10/Untitled-design-91-1024x737.jpg 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2022/10/Untitled-design-91-768x553.jpg 768w, https://campbellveterinaryhospital.com/wp-content/uploads/2022/10/Untitled-design-91-1200x864.jpg 1200w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />						</div>
+													<div class="premium-blog-thumbnail-overlay">
+								<a class="elementor-icon" href="https://campbellveterinaryhospital.com/be-cautious-of-halloween-candy-that-could-harm-your-dogs/" target="_self" aria-label="Be cautious of Halloween candy that could harm your dogs"></a>
+							</div>
+
+																		</div>
+												<div class="premium-blog-content-wrapper ">
+
+					<div class="premium-blog-inner-container">
+
+														<h2 class="premium-blog-entry-title">
+			<a href="https://campbellveterinaryhospital.com/be-cautious-of-halloween-candy-that-could-harm-your-dogs/" target="_self">
+				Be cautious of Halloween candy that could harm your dogs			</a>
+		</h2>
+				<div class="premium-blog-entry-meta">
+			
+							<span class="premium-blog-meta-separator">•</span>
+				<div class="premium-blog-post-time premium-blog-meta-data">
+					<i class="fa fa-calendar-alt" aria-hidden="true"></i>
+					<span>October 10, 2022</span>
+				</div>
+			
+			
+					</div>
+		
+					</div>
+
+							<div class="premium-blog-content-inner-wrapper">
+		<p class="premium-blog-post-content">The sweet Treats are undoubtedly one of the best parts of Halloween, but make sure that your dog or pet doesn’t get tricked into eating something from your stash that could make them sick. It’s no secret that chocolate isn’t healthy for pups to consume, and with it being one of the most popular and &hellip; <a href="https://campbellveterinaryhospital.com/be-cautious-of-halloween-candy-that-could-harm-your-dogs/" class="more-link">Continue reading<span class="screen-reader-text"> "Be cautious of Halloween candy that could harm your dogs"</span></a></p>		</div>
+							
+				</div>
+			</div>
+		</div>
+
+				<div class="premium-blog-post-outer-container" data-total="2">
+			<div class="premium-blog-post-container premium-blog-skin-side">
+									<div class="premium-blog-thumb-effect-wrapper">
+						<div class="premium-blog-thumbnail-container premium-blog-zoomin-effect">
+							<img loading="lazy" decoding="async" width="1200" height="600" src="https://campbellveterinaryhospital.com/wp-content/uploads/2022/05/campbell.png" class="attachment-full size-full wp-image-2875" alt="A person walking a small dog on a leash along a paved path with a white wall and greenery in the background." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2022/05/campbell.png 1200w, https://campbellveterinaryhospital.com/wp-content/uploads/2022/05/campbell-500x250.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2022/05/campbell-1024x512.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2022/05/campbell-768x384.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />						</div>
+													<div class="premium-blog-thumbnail-overlay">
+								<a class="elementor-icon" href="https://campbellveterinaryhospital.com/canine-pawpad-burn-awareness/" target="_self" aria-label="Summer Heat &#038; Canine Feet: Pawpad Burn Awareness"></a>
+							</div>
+
+																		</div>
+												<div class="premium-blog-content-wrapper ">
+
+					<div class="premium-blog-inner-container">
+
+														<h2 class="premium-blog-entry-title">
+			<a href="https://campbellveterinaryhospital.com/canine-pawpad-burn-awareness/" target="_self">
+				Summer Heat &#038; Canine Feet: Pawpad Burn Awareness			</a>
+		</h2>
+				<div class="premium-blog-entry-meta">
+			
+							<span class="premium-blog-meta-separator">•</span>
+				<div class="premium-blog-post-time premium-blog-meta-data">
+					<i class="fa fa-calendar-alt" aria-hidden="true"></i>
+					<span>May 18, 2022</span>
+				</div>
+			
+			
+					</div>
+		
+					</div>
+
+							<div class="premium-blog-content-inner-wrapper">
+		<p class="premium-blog-post-content">Beautiful, “sunny and 75” weather may seem like a great time to take your dog out for a stroll, but it is important to be mindful of their paws. The paws of dogs and cats have sensitive pads that are vulnerable to heat. In the summer, certain surfaces like pavement and asphalt, and even astro-turf &hellip; <a href="https://campbellveterinaryhospital.com/canine-pawpad-burn-awareness/" class="more-link">Continue reading<span class="screen-reader-text"> "Summer Heat &#038; Canine Feet: Pawpad Burn Awareness"</span></a></p>		</div>
+							
+				</div>
+			</div>
+		</div>
+
+				<div class="premium-blog-post-outer-container" data-total="2">
+			<div class="premium-blog-post-container premium-blog-skin-side">
+									<div class="premium-blog-thumb-effect-wrapper">
+						<div class="premium-blog-thumbnail-container premium-blog-zoomin-effect">
+							<img loading="lazy" decoding="async" width="1080" height="699" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/12/Ready-for-thanksgiving-dinner-like...-2-1-e1639598371921.png" class="attachment-full size-full wp-image-2855" alt="A person holds a credit card in one hand and a smartphone in the other, with a notebook on the table." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/12/Ready-for-thanksgiving-dinner-like...-2-1-e1639598371921.png 1080w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/12/Ready-for-thanksgiving-dinner-like...-2-1-e1639598371921-500x324.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/12/Ready-for-thanksgiving-dinner-like...-2-1-e1639598371921-1024x663.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/12/Ready-for-thanksgiving-dinner-like...-2-1-e1639598371921-768x497.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />						</div>
+													<div class="premium-blog-thumbnail-overlay">
+								<a class="elementor-icon" href="https://campbellveterinaryhospital.com/the-better-business-bureau-breaks-down-the-risks-of-buying-pets-online/" target="_self" aria-label="The Better Business Bureau Breaks Down the Risks of Buying Pets Online"></a>
+							</div>
+
+																		</div>
+												<div class="premium-blog-content-wrapper ">
+
+					<div class="premium-blog-inner-container">
+
+														<h2 class="premium-blog-entry-title">
+			<a href="https://campbellveterinaryhospital.com/the-better-business-bureau-breaks-down-the-risks-of-buying-pets-online/" target="_self">
+				The Better Business Bureau Breaks Down the Risks of Buying Pets Online			</a>
+		</h2>
+				<div class="premium-blog-entry-meta">
+			
+							<span class="premium-blog-meta-separator">•</span>
+				<div class="premium-blog-post-time premium-blog-meta-data">
+					<i class="fa fa-calendar-alt" aria-hidden="true"></i>
+					<span>December 15, 2021</span>
+				</div>
+			
+			
+					</div>
+		
+					</div>
+
+							<div class="premium-blog-content-inner-wrapper">
+		<p class="premium-blog-post-content">The Better Business Bureau is asking people who may be looking to add a furry family member as a gift this holiday season to exercise extreme caution if shopping for a pet online. According to the BBB, online pet scams — when an online search ends with a would-be pet owner paying hundreds of dollars &hellip; <a href="https://campbellveterinaryhospital.com/the-better-business-bureau-breaks-down-the-risks-of-buying-pets-online/" class="more-link">Continue reading<span class="screen-reader-text"> "The Better Business Bureau Breaks Down the Risks of Buying Pets Online"</span></a></p>		</div>
+							
+				</div>
+			</div>
+		</div>
+
+				<div class="premium-blog-post-outer-container" data-total="2">
+			<div class="premium-blog-post-container premium-blog-skin-side">
+									<div class="premium-blog-thumb-effect-wrapper">
+						<div class="premium-blog-thumbnail-container premium-blog-zoomin-effect">
+							<img loading="lazy" decoding="async" width="1200" height="600" src="https://campbellveterinaryhospital.com/wp-content/uploads/2021/11/campbell.png" class="attachment-full size-full wp-image-2841" alt="Smiling man in blue scrubs holding a black and white dog, with a stethoscope around his neck." srcset="https://campbellveterinaryhospital.com/wp-content/uploads/2021/11/campbell.png 1200w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/11/campbell-500x250.png 500w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/11/campbell-1024x512.png 1024w, https://campbellveterinaryhospital.com/wp-content/uploads/2021/11/campbell-768x384.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />						</div>
+													<div class="premium-blog-thumbnail-overlay">
+								<a class="elementor-icon" href="https://campbellveterinaryhospital.com/hypothyroidism-in-dogs/" target="_self" aria-label="Hypothyroidism in Dogs"></a>
+							</div>
+
+																		</div>
+												<div class="premium-blog-content-wrapper ">
+
+					<div class="premium-blog-inner-container">
+
+														<h2 class="premium-blog-entry-title">
+			<a href="https://campbellveterinaryhospital.com/hypothyroidism-in-dogs/" target="_self">
+				Hypothyroidism in Dogs			</a>
+		</h2>
+				<div class="premium-blog-entry-meta">
+			
+							<span class="premium-blog-meta-separator">•</span>
+				<div class="premium-blog-post-time premium-blog-meta-data">
+					<i class="fa fa-calendar-alt" aria-hidden="true"></i>
+					<span>November 30, 2021</span>
+				</div>
+			
+			
+					</div>
+		
+					</div>
+
+							<div class="premium-blog-content-inner-wrapper">
+		<p class="premium-blog-post-content">Hypothyroidism (Low Thyroid levels) can be very harmful to your dog. The disease has many different symptoms that may go unnoticed, such as: Cold intolerance Dull coat Excessive Shedding Excessive thirst Weight gain without and increase of appetite Regurgitation of food or water Hypothyroidism if left untreated, can result in many medical conditions such as &hellip; <a href="https://campbellveterinaryhospital.com/hypothyroidism-in-dogs/" class="more-link">Continue reading<span class="screen-reader-text"> "Hypothyroidism in Dogs"</span></a></p>		</div>
+							
+				</div>
+			</div>
+		</div>
+
+							</div>
+
+		
+		
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-298b1ec0 elementor-section-stretched home-schedule-bottom elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="298b1ec0" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-34fdcfcc" data-id="34fdcfcc" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-70e0e8ce elementor-widget elementor-widget-image-box" data-id="70e0e8ce" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h2 class="elementor-image-box-title">Check In Online</h2><p class="elementor-image-box-description">Our standard care includes yearly preventive blood work with radiographs and urinalysis... just like our doctors do for us. 
+</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-181bc8d6 elementor-mobile-align-center elementor-align-center bottom-schedule-button elementor-widget elementor-widget-button" data-id="181bc8d6" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/check-in-online">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-paw"></i>			</span>
+									<span class="elementor-button-text">CHECK IN ONLINE NOW</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+
+
+
+		</div><!-- .site-content -->
+
+
+	</div><!-- .site-inner -->
+	    <!-- footer -->
+    <div data-wpr-lazyrender="1" id="main-footer" class="main-footer">
+				<!-- Right Menu -->
+				<!-- End Right Menu -->
+    	<div  class="container">
+
+	        <!-- 1/4 -->
+	        <div class="four columns footer1">
+	            <div id="text-4"><h2>Get in Touch</h2>			<div class="textwidget"><p><strong>You can call us at:</strong></p>
+<h1 style="margin-top: 0px;">(762) 221-2202</h1>
+<p><strong>Or visit us at:</strong><br />
+102 Walmart Dr.<br />
+Eatonton, GA 31024</p>
+</div>
+		</div>	        </div>
+	        <!-- /End 1/4 -->
+	        <!-- 2/4 -->
+	        <div class="four columns footer2">
+	            <div id="text-5"><h2>Our Hours</h2>			<div class="textwidget"><p>Monday, Tuesday, Wednesday, Friday:<br />
+8:30am &#8211; 6:00pm</p>
+<p>Saturday 8:30am &#8211; 12:00 pm.<br />
+<br />Closed Thursday, Sunday<br />and the Second and Fourth<br />Saturdays of every month.</p>
+</div>
+		</div>	        </div>
+	        <!-- /End 2/4 -->
+	        <!-- 3/4 -->
+	        <div class="four columns footer3">
+	            <div id="gform_widget-2"><h2>Sign Up For Our Newsletter!</h2><link rel='stylesheet' id='gforms_reset_css-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.10.5' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.10.5' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.10.5' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css' href='https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.10.5' media='all' />
+<script id="wp-dom-ready-js" src="https://campbellveterinaryhospital.com/wp-includes/js/dist/dom-ready.min.js?ver=a06281ae5cf5500e9317"></script>
+<script id="wp-hooks-js" src="https://campbellveterinaryhospital.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="https://campbellveterinaryhospital.com/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js" src="https://campbellveterinaryhospital.com/wp-includes/js/dist/a11y.min.js?ver=af934e5259bc51b8718e"></script>
+<script id="gform_json-js" defer='defer' src="https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.10.5"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","file_uploaded":"File uploaded","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"ae8f31ba1a39d17ef926755f6f1e9d94","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.10.5"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.10.5"></script>
+
+                <div class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_7' ><form method='post' enctype='multipart/form-data'  id='gform_7'  action='/' data-formid='7' novalidate>
+                        <div class='gform-body gform_body'><ul id='gform_fields_7' class='gform_fields top_label form_sublabel_below description_below validation_below'><li id="field_7_1" class="gfield gfield--type-email field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label screen-reader-text' for='input_7_1'>Email Address</label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_7_1' type='email' value='' class='large'   placeholder='Email Address'  aria-invalid="false"  />
+                        </div></li></ul></div>
+        <div class='gform-footer gform_footer top_label'> <input type='submit' id='gform_submit_button_7' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' value='Go'  /> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_7' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_7' id='gform_theme_7' value='legacy' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_7' id='gform_style_settings_7' value='' />
+            <input type='hidden' class='gform_hidden' name='is_submit_7' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='7' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='RTjHzX+gEIYQvcNXZ4SZvGJNnHnDBsWea4bcgGotKYijYD0cts7yVrgmtz8NF8xDPFflwn5450yLis/QDODPDgGfCkxrlk1nU4WguFHk5up/AQo=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_7' value='WyJbXSIsIjhhN2U5ZWE3OWQ2NDIxYjE0YTQxYjdiMDdhMTcyMGNhIl0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_7' id='gform_target_page_number_7' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_7' id='gform_source_page_number_7' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 7, 'https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_7').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_7');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_7').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_7').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_7').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_7').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_7').val();gformInitSpinner( 7, 'https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [7, current_page]);window['gf_submitting_7'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_7').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [7]);window['gf_submitting_7'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_7').text());}else{jQuery('#gform_7').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "7", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_7" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_7";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_7" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 7, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+</div><div id="custom_html-3"><div class="textwidget custom-html-widget"><br />
+<table border="0" class="socialtable">
+	<tr>
+		<td><a href="https://www.facebook.com/CampbellVeterinaryHospital" target="_blank"><img src="/wp-content/uploads/2021/02/1-6.png" alt="Facebook" width="50" class="footer-social"></a></td>
+		<td><a href="https://www.instagram.com/campbellvethospital/" target="_blank"><img src="/wp-content/uploads/2021/02/3-6.png" alt="Instagram" width="50" class="footer-social"></a></td>
+		<td><a href="https://goo.gl/maps/Qd4W4ft2wi7b3ZUw7" target="_blank"><img src="/wp-content/uploads/2021/02/2-6.png" alt="Google" width="50" class="footer-social"></a></td>
+	</tr>
+</table></div></div>	        </div>
+	        <!-- /End 3/4 -->
+	        <!-- 4/4 -->
+	        <div class="four columns footer4">
+	            	        </div>
+	        <!-- /End 4/4 -->
+	    </div> <!-- /End container -->
+
+    </div>
+    <!-- /End Footer -->
+
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+							<div class="footer-custom-code">
+							
+				</div>
+				
+			<div class="site-info container">
+						
+
+			    <div class="lt-footer">
+			        <div class="widget_text top-head-widget"><div class="textwidget custom-html-widget"><p>
+© Copyright 2021 Campbell Veterinary Hospital. Website by <a href="https://www.goebelmedia.com" target="_Blank">Goebel Media</a>.
+</p></div></div>			    </div>
+
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/et-pet/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			                <style type="text/css">
+                #wpfront-notification-bar, #wpfront-notification-bar-editor            {
+            background: #e12c29;
+            background: -moz-linear-gradient(top, #e12c29 0%, #e12c29 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e12c29), color-stop(100%,#e12c29));
+            background: -webkit-linear-gradient(top, #e12c29 0%,#e12c29 100%);
+            background: -o-linear-gradient(top, #e12c29 0%,#e12c29 100%);
+            background: -ms-linear-gradient(top, #e12c29 0%,#e12c29 100%);
+            background: linear-gradient(to bottom, #e12c29 0%, #e12c29 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12c29', endColorstr='#e12c29',GradientType=0 );
+            background-repeat: no-repeat;
+                        }
+            #wpfront-notification-bar div.wpfront-message, #wpfront-notification-bar-editor.wpfront-message            {
+            color: #ffffff;
+                        }
+            #wpfront-notification-bar a.wpfront-button, #wpfront-notification-bar-editor a.wpfront-button            {
+            background: #00b7ea;
+            background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b7ea), color-stop(100%,#009ec3));
+            background: -webkit-linear-gradient(top, #00b7ea 0%,#009ec3 100%);
+            background: -o-linear-gradient(top, #00b7ea 0%,#009ec3 100%);
+            background: -ms-linear-gradient(top, #00b7ea 0%,#009ec3 100%);
+            background: linear-gradient(to bottom, #00b7ea 0%, #009ec3 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 );
+
+            background-repeat: no-repeat;
+            color: #ffffff;
+            }
+            #wpfront-notification-bar-open-button            {
+            background-color: #00b7ea;
+            right: 10px;
+                        }
+            #wpfront-notification-bar-open-button.top                {
+                background-image: url(https://campbellveterinaryhospital.com/wp-content/plugins/wpfront-notification-bar/images/arrow_down.png);
+                }
+
+                #wpfront-notification-bar-open-button.bottom                {
+                background-image: url(https://campbellveterinaryhospital.com/wp-content/plugins/wpfront-notification-bar/images/arrow_up.png);
+                }
+                #wpfront-notification-bar-table, .wpfront-notification-bar tbody, .wpfront-notification-bar tr            {
+                        }
+            #wpfront-notification-bar div.wpfront-close            {
+            border: 1px solid #ffffff;
+            background-color: #ffffff;
+            color: #000000;
+            }
+            #wpfront-notification-bar div.wpfront-close:hover            {
+            border: 1px solid #aaaaaa;
+            background-color: #aaaaaa;
+            }
+             #wpfront-notification-bar-spacer { display:block; }                </style>
+                            <div  id="wpfront-notification-bar-spacer" class="wpfront-notification-bar-spacer  hidden">
+                <div  id="wpfront-notification-bar-open-button" aria-label="reopen" role="button" class="wpfront-notification-bar-open-button hidden top wpfront-bottom-shadow"></div>
+                <div  id="wpfront-notification-bar" class="wpfront-notification-bar wpfront-fixed top ">
+                                         
+                            <table id="wpfront-notification-bar-table" border="0" cellspacing="0" cellpadding="0" role="presentation">                        
+                                <tr>
+                                    <td>
+                                     
+                                    <div class="wpfront-message wpfront-div">
+                                        WE WILL BE CLOSED FRIDAY, JULY 10th. FOLLOW US ON SOCIAL MEDIA:                                    </div>
+                                                       
+                                        <div class="wpfront-div">
+                                                                                                                                        <a class="wpfront-button" href="https://www.facebook.com/CampbellVeterinaryHospital"  target="_self" >Follow us on Facebook</a>
+                                                                                                                                    </div>                                   
+                                                                                                       
+                                    </td>
+                                </tr>              
+                            </table>
+                            
+                                    </div>
+            </div>
+            
+            <script type="text/javascript">
+                function __load_wpfront_notification_bar() {
+                    if (typeof wpfront_notification_bar === "function") {
+                        wpfront_notification_bar({"position":1,"height":64,"fixed_position":false,"animate_delay":0.5,"close_button":false,"button_action_close_bar":false,"auto_close_after":0,"display_after":1,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":false,"keep_closed_for":0,"position_offset":0,"display_scroll":false,"display_scroll_offset":100,"keep_closed_cookie":"wpfront-notification-bar-keep-closed","log":false,"id_suffix":"","log_prefix":"[WPFront Notification Bar]","theme_sticky_selector":"","set_max_views":false,"max_views":0,"max_views_for":0,"max_views_cookie":"wpfront-notification-bar-max-views"});
+                    } else {
+                                    setTimeout(__load_wpfront_notification_bar, 100);
+                    }
+                }
+                __load_wpfront_notification_bar();
+            </script>
+            <script id="ltheme-skip-link-focus-fix-js" src="https://campbellveterinaryhospital.com/wp-content/themes/et-pet/js/skip-link-focus-fix.js?ver=20160816"></script>
+<script id="jquery-typed-js" src="https://campbellveterinaryhospital.com/wp-content/themes/et-pet/js/typed.js?ver=20181230"></script>
+<script id="ltheme-script-js-extra">
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+//# sourceURL=ltheme-script-js-extra
+</script>
+<script id="ltheme-script-js" src="https://campbellveterinaryhospital.com/wp-content/themes/et-pet/js/functions.js?ver=20181230"></script>
+<script id="ltheme-custom-js" src="https://campbellveterinaryhospital.com/wp-content/themes/et-pet/js/custom.js?ver=20181230"></script>
+<script id="gmg-consent-js-extra">
+var GMGConsent = {"cookieName":"gmg_consent","cookieExpiry":"365","consentRevision":"1","repromptDays":"0","integrationMode":"manual_gtm","gtmId":"GTM-K52BMDS","gtmIds":["GTM-K52BMDS"],"gtmLoadMode":"strict","categories":{"analytics":{"label":"Analytics & Performance","description":"Helps us understand how visitors use the site and improve performance.","enabled":false,"required":false,"wpCategory":"statistics","signals":["analytics_storage"]},"marketing":{"label":"Marketing & Advertising","description":"Supports advertising measurement, personalization, and campaign reporting.","enabled":false,"required":false,"wpCategory":"marketing","signals":["ad_storage","ad_user_data","ad_personalization"]},"functional":{"label":"Functional","description":"Enables optional features such as embedded media, chat, and personalization.","enabled":false,"required":false,"wpCategory":"preferences","signals":["functionality_storage","personalization_storage"]}}};
+//# sourceURL=gmg-consent-js-extra
+</script>
+<script id="gmg-consent-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/gmg-consent-manager/public/js/consent.js?ver=2.0.15"></script>
+<script id="pafe-1411-js" src="https://campbellveterinaryhospital.com/wp-content/uploads/premium-addons-elementor/pafe-1411.js?ver=1778247773"></script>
+<script id="elementor-webpack-runtime-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.0"></script>
+<script id="elementor-frontend-modules-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.0"></script>
+<script id="jquery-ui-core-js" src="https://campbellveterinaryhospital.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="elementor-frontend-js-extra">
+var PremiumSettings = {"ajaxurl":"https://campbellveterinaryhospital.com/wp-admin/admin-ajax.php","nonce":"5421bf5884"};
+//# sourceURL=elementor-frontend-js-extra
+</script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.0","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_panel_promotions":true,"theme_builder_v2":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_collection_loop":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"https:\/\/campbellveterinaryhospital.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/campbellveterinaryhospital.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/campbellveterinaryhospital.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"c729a3dcd3","atomicFormsSendForm":"85fb667ca2"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1411,"title":"Campbell%20Veterinary%20%7C%20Eatonton%2C%20Milledgeville%20%26%20Monticello%20GA","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.0"></script>
+<script id="imagesloaded-js" src="https://campbellveterinaryhospital.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0"></script>
+<script id="pa-elements-handler-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/elements-handler.min.js?ver=4.11.87"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f278756f0a3032bed328ff6a9f6c01d"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=7c651d0ba638ce98b9c65141edddd567"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"ae8f31ba1a39d17ef926755f6f1e9d94"},"ajax":{"ajaxurl":"https://campbellveterinaryhospital.com/wp-admin/admin-ajax.php","ajax_submission_nonce":"5c33b33292","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"871e1f3500"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://campbellveterinaryhospital.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=301fdc9aa6144168f3b854c4c2c8f6d3"></script>
+<script id="elementor-pro-webpack-runtime-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.2.0"></script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/campbellveterinaryhospital.com\/wp-admin\/admin-ajax.php","nonce":"573c7003d8","urls":{"assets":"https:\/\/campbellveterinaryhospital.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/campbellveterinaryhospital.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/campbellveterinaryhospital.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script id="elementor-pro-frontend-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.2.0"></script>
+<script id="pro-elements-handlers-js" src="https://campbellveterinaryhospital.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.2.0"></script>
+<div  id="gmg-consent-banner" class="gmg-banner gmg-banner--bottom" role="dialog" aria-labelledby="gmg-banner-title" aria-describedby="gmg-banner-desc" hidden>
+	<div  class="gmg-banner__inner">
+		<div class="gmg-banner__content">
+			<h2 id="gmg-banner-title" class="gmg-banner__title">We use cookies</h2>
+			<p id="gmg-banner-desc" class="gmg-banner__desc">We use cookies and similar technologies to improve your experience, measure site usage, and support marketing.									</p>
+		</div>
+		<div class="gmg-banner__actions">
+			<button type="button" id="gmg-accept-all" class="gmg-btn gmg-btn--primary">Accept All</button>
+			<button type="button" id="gmg-decline-all" class="gmg-btn gmg-btn--secondary">Reject Optional</button>
+			<button type="button" id="gmg-manage-prefs" class="gmg-btn gmg-btn--ghost">Manage Preferences</button>
+		</div>
+	</div>
+</div>
+<div  id="gmg-pref-modal" class="gmg-modal" role="dialog" aria-modal="true" aria-labelledby="gmg-modal-title" aria-describedby="gmg-modal-intro" hidden>
+	<div  id="gmg-modal-overlay" class="gmg-modal__overlay"></div>
+	<div  class="gmg-modal__box" tabindex="-1">
+		<div class="gmg-modal__header">
+			<h2 id="gmg-modal-title">Manage Preferences</h2>
+			<button type="button" id="gmg-modal-close" class="gmg-modal__close" aria-label="Close preferences">&times;</button>
+		</div>
+		<div class="gmg-modal__body">
+			<p id="gmg-modal-intro" class="gmg-modal__intro">Necessary cookies are always enabled. Choose which optional categories may be used.</p>
+			<div id="gmg-categories-list"></div>
+		</div>
+		<div class="gmg-modal__footer">
+			<button type="button" id="gmg-accept-all-modal" class="gmg-btn gmg-btn--primary">Accept All</button>
+			<button type="button" id="gmg-decline-all-modal" class="gmg-btn gmg-btn--secondary">Reject Optional</button>
+			<button type="button" id="gmg-save-prefs" class="gmg-btn gmg-btn--primary">Save Preferences</button>
+		</div>
+	</div>
+</div>
+<button type="button" id="gmg-reopen-btn" class="gmg-reopen gmg-reopen--bottom_left gmg-reopen--text" aria-label="Open cookie preferences" hidden>Cookie Preferences</button>
+		<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 7) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "7", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_7" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_7";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_7" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 7, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+
+</div><!-- .site -->
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1784829766 -->
